@@ -38,9 +38,9 @@ Each section in the notebook is labelled, and there are comments explaining the 
 
 ### Break down into end to end tests
 
-1.       Two models one for death, one for cases
+•       Two models one for death, one for cases
 
-2.       Predicted numbers a hazard
+•       Predicted numbers as hazard
 
 Hazard * vulnerability
 
@@ -50,7 +50,7 @@ Our innovation: we defined two types of risk: one for death and one for infectio
 
 •       https://lahub.maps.arcgis.com/home/item.html?id=8659eeee6bf94eabb93398773aa25416&view=list#overview
 
-step1. classify features into groups
+```step1. classify features into groups```
 
 •       vulnerable factors related to death cases
 
@@ -69,7 +69,7 @@ step1. classify features into groups
 •       population
 
 
-step2. get raw scores
+```step2. get raw scores```
 
 •       those features are measured at different unit and maginitude
 
@@ -83,7 +83,7 @@ step2. get raw scores
 
 •       and put the two raw score column into a sigmoid function -->two sigmoid_raw_score, one for death and one for cases
 
-step3. calcualte the risk score
+```step3. calcualte the risk score```
 
 •       multiply each scores to the city
 
