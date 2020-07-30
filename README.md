@@ -33,7 +33,8 @@ Math
 ## Running the codes
 
 ```
-Run the model in LA County Covid19 Prediction.R and run the data processing in the file named Get_risk_score.ipynb in the folder. 
+Run the model in LA County Covid19 Prediction.R and 
+run the data processing in the file named Get_risk_score.ipynb in the folder. 
 Each section in the R and python notebook is labelled, and there are comments explaining the code.
 ```
 
