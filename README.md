@@ -1,4 +1,4 @@
-# COVID_Risk_Competition
+# COVID_Risk_Score
 The competition of getting risk scores for each city in LA county
 
 ## Getting Started
