@@ -6,7 +6,7 @@ The competition of getting risk scores for each city in LA county
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ```
-File Name: COVID_Challenge.ipynb
+File Name: Get_risk_score.ipynb
 ```
 ### Data
 
@@ -32,7 +32,7 @@ Math
 ## Running the codes
 
 ```
-Run each section in the file named COVID_Challenge.ipynb in the folder. 
+Run each section in the file named Get_risk_score.ipynb in the folder. 
 Each section in the notebook is labelled, and there are comments explaining the code.
 ```
 
@@ -52,21 +52,21 @@ Our innovation: we defined two types of risk: one for death and one for infectio
 
 ```step1. classify features into groups```
 
-•       vulnerable factors related to death cases
+•       vulnerable factors related to death cases:
 
-•       elderly
+  •       elderly
 
-•       asthma
+  •       asthma
 
-•       cardiovascular
+  •       cardiovascular
 
-•       vulnearble factors related to infected cases
+•       vulnearble factors related to infected cases:
 
-•       poverty: the higher the value the poorer the area
+  •       poverty: the higher the value the poorer the area
 
-•       traffic
+  •       traffic
 
-•       population
+  •       population
 
 
 ```step2. get raw scores```
@@ -84,6 +84,8 @@ Our innovation: we defined two types of risk: one for death and one for infectio
 •       and put the two raw score column into a sigmoid function -->two sigmoid_raw_score, one for death and one for cases
 
 ```step3. calcualte the risk score```
+
+•       apply a hyperparameter (alpha) to both hazard. The formula is: alpha * infected hazard + (1-alpha) * death hazard
 
 •       multiply each scores to the city
 
