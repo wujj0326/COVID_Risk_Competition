@@ -42,9 +42,9 @@ Each section in the notebook is labelled, and there are comments explaining the 
 
 * Predicted numbers as hazard
 
- * Hazard * vulnerability
+  * Hazard * vulnerability
 
- * Our innovation: we defined two types of risk: one for death and one for infection
+  * Our innovation: we defined two types of risk: one for death and one for infection
 
 * data is from here:
 
