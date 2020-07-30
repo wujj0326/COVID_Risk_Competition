@@ -6,7 +6,7 @@ The competition of getting risk scores for each city in LA county
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ```
-File Name: Get_risk_score.ipynb
+File Name: LA County Covid19 Prediction.R, Get_risk_score.ipynb
 ```
 ### Data
 
@@ -15,10 +15,11 @@ The Data are all stored in their corresponding URL, so there is no need to downl
 ### Prerequisites
 
 ```
+R
 Python 3
 ```
 
-### Installing Packages
+### Installing Packages for Python
 
 ```
 Pandas
@@ -32,8 +33,8 @@ Math
 ## Running the codes
 
 ```
-Run each section in the file named Get_risk_score.ipynb in the folder. 
-Each section in the notebook is labelled, and there are comments explaining the code.
+Run the model in LA County Covid19 Prediction.R and run the data processing in the file named Get_risk_score.ipynb in the folder. 
+Each section in the R and python notebook is labelled, and there are comments explaining the code.
 ```
 
 ### Break down into end to end tests
