@@ -60,13 +60,13 @@ Our innovation: we defined two types of risk: one for death and one for infectio
 
   *cardiovascular
 
-*vulnearble factors related to infected cases:
+* vulnearble factors related to infected cases:
 
-  *poverty: the higher the value the poorer the area
+  * poverty: the higher the value the poorer the area
 
-  *traffic
+  * traffic
 
-  *population
+  * population
 
 
 ```step2. get raw scores```
