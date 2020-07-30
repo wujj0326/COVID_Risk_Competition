@@ -38,6 +38,10 @@ Each section in the notebook is labelled, and there are comments explaining the 
 
 ### Break down into end to end tests
 
+```
+Noticed that the model is done by using R, we are trying to integrate both codes to Python only.
+```
+
 * Two models one for death, one for cases
 
 * Predicted numbers as hazard
