@@ -38,27 +38,27 @@ Each section in the notebook is labelled, and there are comments explaining the 
 
 ### Break down into end to end tests
 
-•       Two models one for death, one for cases
+* Two models one for death, one for cases
 
-•       Predicted numbers as hazard
+* Predicted numbers as hazard
 
-Hazard * vulnerability
+ * Hazard * vulnerability
 
-Our innovation: we defined two types of risk: one for death and one for infection
+ * Our innovation: we defined two types of risk: one for death and one for infection
 
-•       data is from here:
+* data is from here:
 
-•       https://lahub.maps.arcgis.com/home/item.html?id=8659eeee6bf94eabb93398773aa25416&view=list#overview
+  https://lahub.maps.arcgis.com/home/item.html?id=8659eeee6bf94eabb93398773aa25416&view=list#overview
 
 ```step1. classify features into groups```
 
-*vulnerable factors related to death cases:
+* vulnerable factors related to death cases:
 
-  *elderly
+  * elderly
 
-  *asthma
+  * asthma
 
-  *cardiovascular
+  * cardiovascular
 
 * vulnearble factors related to infected cases:
 
@@ -71,29 +71,29 @@ Our innovation: we defined two types of risk: one for death and one for infectio
 
 ```step2. get raw scores```
 
-•       those features are measured at different unit and maginitude
+* those features are measured at different unit and maginitude
 
-•       normalize them before summarize
+* normalize them before summarize
 
-•       (obs - min(obs))/(max(obs) - min(obs))
+* (obs - min(obs))/(max(obs) - min(obs))
 
-•       then each entry bocomes 0 to 1
+* then each entry bocomes 0 to 1
 
-•       and take a sum to get a raw score for death vulnerablity and case vulnerabilty
+* take a sum to get a raw score for death vulnerablity and case vulnerabilty
 
-•       and put the two raw score column into a sigmoid function -->two sigmoid_raw_score, one for death and one for cases
+* put the two raw score column into a sigmoid function -->two sigmoid_raw_score, one for death and one for cases
 
 ```step3. calcualte the risk score```
 
-•       apply a hyperparameter (alpha) to both hazard. The formula is: alpha * infected hazard + (1-alpha) * death hazard
+* apply a hyperparameter (alpha) to both hazard. The formula is: alpha * infected hazard + (1-alpha) * death hazard
 
-•       multiply each scores to the city
+* multiply each scores to the city
 
-•       calculate the mean of risk score to get a weekly risk score
+* calculate the mean of risk score to get a weekly risk score
 
 ```step4. generate the risk level```
 
-•       generate the risk level by calculating the quatile of the weekly risk score
+* generate the risk level by calculating the quatile of the weekly risk score
 
 
 ## Authors
