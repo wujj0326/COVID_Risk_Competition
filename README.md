@@ -103,7 +103,7 @@ Each section in the notebook is labelled, and there are comments explaining the 
 * **Kayla Tanli**
 * **Zuo Zuo**
 
-Mentor: Richard Zhen Tang
+* **Mentor: Richard Zhen Tang**
 
 ## License
 
