@@ -89,6 +89,12 @@ Our innovation: we defined two types of risk: one for death and one for infectio
 
 •       multiply each scores to the city
 
+•       calculate the mean of risk score to get a weekly risk score
+
+```step4. generate the risk level```
+
+•       generate the risk level by calculating the quatile of the weekly risk score
+
 
 ## Authors
 
