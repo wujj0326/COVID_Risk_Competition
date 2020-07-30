@@ -48,9 +48,9 @@ Noticed that the model is done by using R, we are trying to integrate both codes
 
   * Hazard * vulnerability
 
-  * Our innovation: we defined two types of risk: one for death and one for infection
+  * Our innovation: we defined two types of risk, one for death and one for infection, then multiplied by the hyperparameter alpha to merge as one score.
 
-* data is from here:
+* The data is from here:
 
   https://lahub.maps.arcgis.com/home/item.html?id=8659eeee6bf94eabb93398773aa25416&view=list#overview
 
@@ -79,9 +79,7 @@ Noticed that the model is done by using R, we are trying to integrate both codes
 
 * normalize them before summarize
 
-* (obs - min(obs))/(max(obs) - min(obs))
-
-* then each entry bocomes 0 to 1
+* each entry bocomes 0 to 1
 
 * take a sum to get a raw score for death vulnerablity and case vulnerabilty
 
