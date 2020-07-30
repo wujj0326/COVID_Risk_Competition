@@ -52,21 +52,21 @@ Our innovation: we defined two types of risk: one for death and one for infectio
 
 ```step1. classify features into groups```
 
-•       vulnerable factors related to death cases:
+*vulnerable factors related to death cases:
 
-  •       elderly
+  *elderly
 
-  •       asthma
+  *asthma
 
-  •       cardiovascular
+  *cardiovascular
 
-•       vulnearble factors related to infected cases:
+*vulnearble factors related to infected cases:
 
-  •       poverty: the higher the value the poorer the area
+  *poverty: the higher the value the poorer the area
 
-  •       traffic
+  *traffic
 
-  •       population
+  *population
 
 
 ```step2. get raw scores```
