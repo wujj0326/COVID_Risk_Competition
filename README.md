@@ -6,16 +6,16 @@ The competition of getting risk scores for each city in LA county
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ```
-File Name: LA County Covid19 Prediction.R, Get_risk_score.ipynb
+File Name: COVID_LSTM_Prediction.ipynb, Get_risk_score.ipynb
 ```
 ### Data
 
-The Data are all stored in their corresponding URL, so there is no need to download the data  
+The Raw Data are all stored in their corresponding URL
+Moreover, the LSTM model would generate the predicted values that would be used in the Get_risk_score.ipynb
 
 ### Prerequisites
 
 ```
-R
 Python 3
 ```
 
@@ -33,16 +33,14 @@ Math
 ## Running the codes
 
 ```
-Run the model in LA County Covid19 Prediction.R and 
-run the data processing in the file named Get_risk_score.ipynb in the folder. 
-Each section in the R and python notebook is labelled, and there are comments explaining the code.
+Run the model in COVID_LSTM_Prediction.ipynb and 
+run the file named Get_risk_score.ipynb in the folder to get the final risk score. 
+Each section in the python notebook is labelled, and there are comments explaining the code.
 ```
 
 ### Break down into end to end tests
 
-```
-Noticed that the model is done by using R, we are trying to integrate both codes to Python only.
-```
+
 
 * Two models one for death, one for cases
 
