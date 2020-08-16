@@ -10,7 +10,8 @@ File Name: COVID_LSTM_Prediction.ipynb, Get_risk_score.ipynb
 ```
 ### Data
 
-The Raw Data are all stored in their corresponding URL
+The Raw Data are all stored in their corresponding URL.
+
 Moreover, the LSTM model would generate the predicted values that would be used in the Get_risk_score.ipynb
 
 ### Prerequisites
