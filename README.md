@@ -12,7 +12,7 @@ File Name: COVID_LSTM_Prediction.ipynb, Get_risk_score.ipynb
 
 The Raw Data are all stored in their corresponding URL.
 
-Moreover, the LSTM model would generate the predicted values that would be used in the Get_risk_score.ipynb
+Moreover, the LSTM model would generate the predicted values that would be used to get the final risk score
 
 ### Prerequisites
 
@@ -34,8 +34,7 @@ Math
 ## Running the codes
 
 ```
-Run the model in COVID_LSTM_Prediction.ipynb and 
-run the file named Get_risk_score.ipynb in the folder to get the final risk score. 
+Run all the cell in COVID_Risk_Score.ipynb and 
 Each section in the python notebook is labelled, and there are comments explaining the code.
 ```
 
