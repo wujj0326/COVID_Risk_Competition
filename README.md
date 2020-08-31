@@ -6,7 +6,7 @@ The competition of getting risk scores for each city in LA county
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ```
-File Name: COVID_LSTM_Prediction.ipynb, Get_risk_score.ipynb
+File Name: COVID_Risk_Score_Ver2.ipynb
 ```
 ### Data
 
@@ -34,7 +34,7 @@ Math
 ## Running the codes
 
 ```
-Run all the cell in COVID_Risk_Score.ipynb and 
+Run all the cell in COVID_Risk_Score_Ver2.ipynb and 
 Each section in the python notebook is labelled, and there are comments explaining the code.
 ```
 
@@ -42,13 +42,12 @@ Each section in the python notebook is labelled, and there are comments explaini
 
 
 
-* Two models one for death, one for cases
+* LSTM Model would predict the increase cases for every city in Los Angeles
 
 * Predicted numbers as hazard
 
   * Hazard * vulnerability
 
-  * Our innovation: we defined two types of risk, one for death and one for infection, then multiplied by the hyperparameter alpha to merge as one score.
 
 * The data is from here:
 
@@ -56,15 +55,13 @@ Each section in the python notebook is labelled, and there are comments explaini
 
 ```step1. classify features into groups```
 
-* vulnerable factors related to death cases:
+* vulnerable factors related to confirmed cases:
 
   * elderly
 
   * asthma
 
   * cardiovascular
-
-* vulnearble factors related to infected cases:
 
   * poverty: the higher the value the poorer the area
 
@@ -73,7 +70,7 @@ Each section in the python notebook is labelled, and there are comments explaini
   * population
 
 
-```step2. get raw scores```
+```step2. get local risk scores```
 
 * those features are measured at different unit and maginitude
 
@@ -81,21 +78,24 @@ Each section in the python notebook is labelled, and there are comments explaini
 
 * each entry bocomes 0 to 1
 
-* take a sum to get a raw score for death vulnerablity and case vulnerabilty
+* take a sum to get a raw score for vulnerabilty
 
-* put the two raw score column into a sigmoid function -->two sigmoid_raw_score, one for death and one for cases
+* put the raw score column into a sigmoid function
+
+
+```step2. get google mobility scores```
+
+* get the google mobility data 
+
+* use LSTM to predict the mobility score for the next 7 days
+
+* sum the percentage change and normalize it
+
 
 ```step3. calcualte the risk score```
 
-* apply a hyperparameter (alpha) to both hazard. The formula is: alpha * infected hazard + (1-alpha) * death hazard
-
 * multiply each scores to the city
 
-* calculate the mean of risk score to get a weekly risk score
-
-```step4. generate the risk level```
-
-* generate the risk level by calculating the quatile of the weekly risk score
 
 
 ## Authors
